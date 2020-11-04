@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Text reveal animation</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="line">
+      <span>I code designs. Rad designs for rad learners.</span>
+    </div>
+    <div class="line">
+      <span>I code designs. Rad designs for rad learners.</span>
+    </div>
+    <div class="line">
+      <span>I code designs. Rad designs for rad learners.</span>
+    </div>
+    <div class="line">
+      <span>I code designs. Rad designs for rad learners.</span>
+    </div>
+    <div class="line">
+      <span>I code designs. Rad designs for rad learners.</span>
+    </div>
+  </div>
+  <script>
+    const textrev = gsap.timeline();
+
+    textrev.from(".line span", 1.8, {
+      y:200,
+      ease: "power.out",
+      delay: 1,
+      skewY: 10,
+      stagger: {
+        amount: 0.4
+      }
+    });
+  </script>
+</body>
+</html>
